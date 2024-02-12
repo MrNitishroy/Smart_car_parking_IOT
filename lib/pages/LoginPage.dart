@@ -10,7 +10,9 @@ class LoginPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController demo = TextEditingController();
+    TextEditingController email = TextEditingController();
+    TextEditingController password = TextEditingController();
+   
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.deepPurple.shade200,
@@ -40,10 +42,10 @@ class LoginPage extends StatelessWidget {
               ),
               SizedBox(height: 30),
               MyTextField(
-                  icons: Icons.email, lable: "Email id", Onchange: demo),
+                  icons: Icons.email, lable: "Email id", Onchange: email),
               SizedBox(height: 10),
               MyTextField(
-                  icons: Icons.password, lable: "Password", Onchange: demo),
+                  icons: Icons.password, lable: "Password", Onchange: password),
               SizedBox(height: 90),
               MyButton(
                 icon: Icons.admin_panel_settings_rounded,
